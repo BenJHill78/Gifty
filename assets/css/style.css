@@ -1,0 +1,23 @@
+    
+body {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	text-align: center;
+	background-size: 100%;
+	font-family: 'Permanent Marker', cursive; 
+	color: blue;
+}
+#gifs {
+	align-content: center;
+	border-image-width: 30px;
+}
+.rating {
+	float: left;
+	margin: 5px;
+}
+.pics{
+	height: 300px;
+	width: 300px;
+	float: left;
+
+}

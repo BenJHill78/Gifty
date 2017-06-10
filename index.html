@@ -1,38 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Food Disasters</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Food Disasters</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
 
-<body>
- <div class="container">
-  <h2>Gify Grilling</h2>
-  <p>Giphy API Homework</p>
+  <body>
+   <div class="container">
+    <h2>Fun with Giphy</h2>
+
     <div id="buttons"></div>
+    <form id="Food-Issues"> 
+      <label for="food-input">Search for Food Issues.</label>
+      <input type="text" id="foodIssues">
+      <input id="find-food" type="submit" value="Food Search">
+    </form>
+    <div id="gifs"></div>
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-        var foodMistakes= ["grilling", "baking", "picnics"];
-        var queryURL;
-          for (var i = 0; i < foodMistakes.length; i++){ //
-            queryURL = "http://api.giphy.com/v1/gifs/search?q="+ foodMistakes[i]+"&limit=10&api_key=dc6zaTOxFJmzC"
-            var foodBtn = $("<button>");
-            $(foodBtn).addClass("foodButton");
-            $(foodBtn).attr("data-food", queryURL);
-            $(foodBtn).text(foodMistakes[i]);
-            $("#buttons").append(foodBtn);
-          }
-        });
-
-
-
-      </script>
-
-
-    </body>
-
-    </html>
+    <script type="text/javascript" src="assets/javascript/gifty.js"></script>
+  </body>
+  </html>
